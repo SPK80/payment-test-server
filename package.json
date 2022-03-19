@@ -1,0 +1,18 @@
+{
+	"name": "my-records-server",
+	"version": "0.2.0",
+	"description": "",
+	"main": "index.js",
+	"type": "module",
+	"scripts": {
+		"start": "node index"
+	},
+	"author": "SPK80",
+	"license": "ISC",
+	"dependencies": {
+		"cors": "^2.8.5",
+		"express": "^4.17.3",
+		"express-favicon": "^2.0.1",
+		"mongoose": "^6.2.7"
+	}
+}
