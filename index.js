@@ -6,6 +6,7 @@ import { writePayment } from './dbApi.js'
 
 import path from 'path'
 import { fileURLToPath } from 'url';
+// import delay from './delay.js'
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
@@ -32,6 +33,7 @@ app.route('/api/payments')
 
 		try {
 			const paymentId = await writePayment(payment);
+			// await delay(2000);
 			return res.status(200)
 				.send({
 					RequestId: paymentId,
